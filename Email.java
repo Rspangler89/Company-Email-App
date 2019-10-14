@@ -10,7 +10,7 @@ public class Email
 	private String department;
 	private String email;
 	private int mailboxCapacity = 500;
-	private int defaultPasswordLegth = 10;
+	private int defaultPasswordLength = 10;
 	private String companySuffix = "rasCompany.com";
 
 	// Constructor with perameters to recieve the first name and last name from EmailApp file.
@@ -23,7 +23,7 @@ public class Email
         this.department = setDepartment();
 
         // Call a method that returns a random password.
-        this.password = randomPassword(defaultPasswordLegth);
+        this.password = randomPassword(defaultPasswordLength);
         System.out.println("\nYour password is: " + this.password);
 
         // Combine elements to generate email.
